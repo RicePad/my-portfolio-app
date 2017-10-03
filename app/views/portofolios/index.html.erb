@@ -7,8 +7,7 @@
     <p><%= portofolio_item.body %></p>
     <p><%= portofolio_item.main_image %></p>
     <p><%= image_tag  portofolio_item.thumb_image unless  portofolio_item.thumb_image.nil?    %></p>
-    <%= link_to "Edit portofolio", edit_portofolio_path(portofolio_item.id) %>
-
+    <%= link_to 'Destroy', portofolio_path(portofolio_item.id), method: :delete, data: { confirm: 'Are you sure?' } %>
 
 
 
