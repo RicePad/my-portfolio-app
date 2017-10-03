@@ -3,12 +3,11 @@ Rails.application.routes.draw do
   resources :portofolios
   
   get 'pages/home'
-
-  get 'pages/about'
-
-  get 'pages/contact'
-
-  root to: 'blogs#index'
+  get 'aboutme', to: 'pages#about'
+  get 'contact', to: 'pages#contact'
+  
+    
+  root to: 'pages#home'
 
   resources :blogs
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
