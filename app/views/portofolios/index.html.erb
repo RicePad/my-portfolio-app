@@ -2,7 +2,7 @@
 
 <%= link_to "Create portofolio", new_portofolio_path %>
 <% @portofolio_items.each do |portofolio_item|%>
-    <p><%= portofolio_item.title %></p>
+    <p><%= link_to portofolio_item.title, portofolio_path(portofolio_item.id) %></p>
     <p><%= portofolio_item.subtitle %></p>
     <p><%= portofolio_item.body %></p>
     <p><%= portofolio_item.main_image %></p>

@@ -1,5 +1,5 @@
 class PortofoliosController < ApplicationController
-    before_action :set_blog, only: [:update, :edit]
+    before_action :set_blog, only: [:update, :edit, :show]
     def index
         @portofolio_items = Portofolio.all
     end
@@ -14,7 +14,7 @@ class PortofoliosController < ApplicationController
          @portofolio_item = Portofolio.new(blog_params)
         
         if @portofolio_item.save 
-            redirect_to portofolios_path, notice: "your protofoli has been created"
+            redirect_to @portofolio_item, notice: "your protofoli has been created"
          else
             render :new
         end
@@ -22,7 +22,6 @@ class PortofoliosController < ApplicationController
     end
     
     def edit
-
     end
 
     def update 
@@ -34,6 +33,10 @@ class PortofoliosController < ApplicationController
      end
               
     end
+    
+    def show
+    end
+
 
  private
     
