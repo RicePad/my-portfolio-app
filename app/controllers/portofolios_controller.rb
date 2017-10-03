@@ -1,5 +1,5 @@
 class PortofoliosController < ApplicationController
-
+    before_action :set_blog, only: [:update, :edit]
     def index
         @portofolio_items = Portofolio.all
     end
@@ -21,10 +21,26 @@ class PortofoliosController < ApplicationController
         
     end
     
-    def show 
+    def edit
+
     end
- 
+
+    def update 
+
+        if @portofolio_item.update(blog_params)
+            redirect_to portofolios_path, notice: "you have updated your portofolio"
+        else
+            render :edit
+     end
+              
+    end
+
  private
+    
+       def set_blog 
+               @portofolio_item = Portofolio.find(params[:id])
+               
+        end
     
         def blog_params
             params.require(:portofolio).permit(:title, :subtitle, :body)
