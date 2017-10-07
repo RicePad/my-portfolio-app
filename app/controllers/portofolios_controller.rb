@@ -18,7 +18,7 @@ class PortofoliosController < ApplicationController
          @portofolio_item = Portofolio.new(blog_params)
         
         if @portofolio_item.save 
-            redirect_to @portofolio_item, notice: "your protofoli has been created"
+            redirect_to portofolios_path, notice: "your protofoli has been created"
          else
             render :new
         end
