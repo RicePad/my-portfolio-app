@@ -1,5 +1,5 @@
 class Portofolio < ApplicationRecord
-  validate_presence_of :title, :body, :thumb_image
+  validates_presence_of :title, :body, :thumb_image
 
 
 
