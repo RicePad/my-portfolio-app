@@ -16,7 +16,7 @@ class PortofoliosController < ApplicationController
 
     
     def create
-         @portofolio_item = Portofolio.new(blog_params)
+         @portofolio_item = Portofolio.new(portofolio_params)
         
         if @portofolio_item.save 
             redirect_to portofolios_path, notice: "your protofoli has been created"
@@ -31,7 +31,7 @@ class PortofoliosController < ApplicationController
 
     def update 
 
-        if @portofolio_item.update(blog_params)
+        if @portofolio_item.update(portofolio_params)
             redirect_to portofolios_path, notice: "you have updated your portofolio"
         else
             render :edit
@@ -54,7 +54,7 @@ class PortofoliosController < ApplicationController
                
         end
     
-        def blog_params
+        def portofolio_params
             params.require(:portofolio).permit(:title, :subtitle, :body, technologies_attributes: [:name])
         end
     

@@ -3,9 +3,14 @@ class ApplicationController < ActionController::Base
   #add name parameters to devise authentication:
   include DeviseWhitelist
   include SetSource
+  include CurrentUserConcern
+  
+  # set  guest user session with Openstruct without using concern
+  # def current_user
+  #   super || OpenStruct.new(new: "Guest User", first_name: "Guest", last_name: "User", email: "guest@example.com")
+  # end
   
   
-  # set sessions to track utm parameters
   # before_action :set_source
   
   # def set_source
