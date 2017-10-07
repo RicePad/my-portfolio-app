@@ -1,4 +1,5 @@
 class Portofolio < ApplicationRecord
+  has_many :technologies
   validates_presence_of :title, :body, :thumb_image
     
   def self.angular
