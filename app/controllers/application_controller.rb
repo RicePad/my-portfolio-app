@@ -5,6 +5,15 @@ class ApplicationController < ActionController::Base
   include SetSource
   include CurrentUserConcern
   
+  
+  before_action :set_title
+  
+  def set_title
+    @page_title = "Jonathan L. | My Portofolio"
+  end
+  
+  
+  
   # set  guest user session with Openstruct without using concern
   # def current_user
   #   super || OpenStruct.new(new: "Guest User", first_name: "Guest", last_name: "User", email: "guest@example.com")

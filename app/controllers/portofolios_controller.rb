@@ -51,7 +51,6 @@ class PortofoliosController < ApplicationController
     
        def set_blog 
                @portofolio_item = Portofolio.find(params[:id])
-               
         end
     
         def portofolio_params
