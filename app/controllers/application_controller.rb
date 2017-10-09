@@ -6,11 +6,29 @@ class ApplicationController < ActionController::Base
   include CurrentUserConcern
   
   
-  before_action :set_title
+  before_action :set_copyright
   
-  def set_title
-    @page_title = "Jonathan L. | My Portofolio"
+  def set_copyright
+    @copyright = JLiCopyrightViewTool::Renderer.copyright "Jonathan Li", "All Rights Reserverd"
   end
+end
+  
+   module JLiCopyrightViewTool
+    class Renderer
+      def self.copyright name, msg
+        "&copy #{Time.now.year} <b>#{name}</b> #{msg}".html_safe
+      end
+    end
+  
+  
+ #Found in /concerns/default_page_content
+  # before_action :set_title
+  
+  # def set_title
+  #   @page_title = "Jonathan L. | My Portofolio"
+  # end
+  
+  
   
   
   
