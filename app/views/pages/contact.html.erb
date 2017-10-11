@@ -1,6 +1,24 @@
-<h1>Pages#contact</h1>
-<p>Find me in app/views/pages/contact.html.erb</p>
-<p><%= number_to_phone "4013390446" %></p>
-<p><%= number_to_currency "123123123131312312" %></p>
-<p><%= number_with_delimiter "13123131231232131" %></p>
-<p><%= number_to_percentage "10.1" %></p>
+<h1>Here's my contact info:</h1>
+<hr>
+<div class="row">
+    <div class="col-md-6">
+        <h3>Office Address</h3>
+        <p>156 2nd St, San Francisco, CA 94105</p>
+        <h3>Phone</h3>
+        <p><%= number_to_phone "4015807317" %></p>
+        <h3>Email</h3>
+        <p><a href="mailto:example@gmail.com?subject=Portofolio contact"> Email me</a></p>
+    </div>    
+    <div class="col-md--6">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.124903095389!2d-122.40129358444236!3d37.78711251922208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807d245666b7%3A0x7e139b8a45d04058!2s156+2nd+St%2C+San+Francisco%2C+CA+94105!5e0!3m2!1sen!2sus!4v1507765872098" width="450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    
+</div>
+
+
+
+
+<!--<p><%#= number_to_phone "4013390446" %></p>-->
+<!--<p><%#= number_to_currency "123123123131312312" %></p>-->
+<!--<p><%#= number_with_delimiter "13123131231232131" %></p>-->
+<!--<p><%#= number_to_percentage "10.1" %></p>-->
