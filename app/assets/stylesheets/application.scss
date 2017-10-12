@@ -164,6 +164,8 @@ body {
 .card-block {
   color: black;
   text-align: left;
+  margin: 0 auto;
+
 }
 
 .auth-links a {
@@ -172,4 +174,10 @@ body {
 
 .registration-text {
   text-align: right;
+}
+
+.login > .card {
+  width: 22rem;
+  margin: 0 auto;
+  float: none;
 }
