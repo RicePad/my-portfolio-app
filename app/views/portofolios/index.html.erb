@@ -1,5 +1,7 @@
 <div class="album text-muted">
   <div class="container">
+  <%= link_to "Add new portfolio", new_portofolio_path, class: "btn btn-success" if logged_in?(:site_admin) %> <br/><br>
+
     <div class="row">
       <%= render partial: 'portofolio_item', collection: @portofolio_items %>
     </div>

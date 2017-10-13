@@ -17,17 +17,15 @@
       <!-- end of navigation -->
     
      <!-- start of masthead -->
-      <%= render 'shared/portofolio_masthead'%>
+      <%= render 'shared/portofolio_masthead' unless logged_in?(:site_admin)%>
     <!-- end of masthead -->
-    <%#= login_helper %>
-    <%#= render 'shared/navigation', location: 'top'%>
     <%= yield %> 
        
     <!-- start of footer -->
     <%= render 'shared/portofolio_footer'%>
     <!-- end of footer -->
 
-        <%= source_helper("portofolio") %>
+    <%= source_helper("portofolio") %>
 
     
   </body>

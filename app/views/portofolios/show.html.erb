@@ -15,9 +15,15 @@
             
             <% @portofolio_item.technologies.each do |t|%>
             <p><%= t.name %></p>
+
             <% end %> 
+            
+            
         </div>
         
     </div>
+    <br/>    
+     <%= link_to "Edit", edit_portofolio_path(@portofolio_item.id), class: "btn btn-success" if logged_in?(:site_admin)  %> <br/><br>
+
 </div>
 
