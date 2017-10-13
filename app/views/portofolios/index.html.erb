@@ -2,7 +2,7 @@
   <div class="container">
   <%= link_to "Add new portfolio", new_portofolio_path, class: "btn btn-success" if logged_in?(:site_admin) %> <br/><br>
 
-    <div class="row">
+    <div class="row sortable">
       <%= render partial: 'portofolio_item', collection: @portofolio_items %>
     </div>
   </div>
