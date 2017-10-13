@@ -60,5 +60,8 @@ gem 'bootstrap', '~> 4.0.0.beta'
 gem 'jquery-rails'
 gem 'jonli_view_tool'
 gem 'petergate', '~> 1.6', '>= 1.6.3'
+gem "font-awesome-rails"
+gem 'kaminari', '~> 1.0', '>= 1.0.1'
+
 
 
