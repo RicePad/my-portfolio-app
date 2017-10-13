@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   
   resources :portofolios, except: [:show]
   
-  get 'portofolio/:id', to: 'portofolios#show', as: 'portofolo_show'
+  get 'portofolio/:id', to: 'portofolios#show', as: 'portofolio_show'
   
   get 'pages/home'
   get 'aboutme', to: 'pages#about'
