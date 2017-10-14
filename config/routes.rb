@@ -4,7 +4,9 @@ Rails.application.routes.draw do
   
   get 'angular', to: "portofolios#angular"
   
-  resources :portofolios, except: [:show]
+  resources :portofolios, except: [:show] do
+    put :sort, on: :collection
+  end
   
   get 'portofolio/:id', to: 'portofolios#show', as: 'portofolio_show'
   
