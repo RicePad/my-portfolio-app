@@ -68,7 +68,7 @@ class PortofoliosController < ApplicationController
         end
     
         def portofolio_params
-            params.require(:portofolio).permit(:title, :subtitle, :body, technologies_attributes: [:name])
+            params.require(:portofolio).permit(:title, :subtitle, :body, :main_image, :thumb_image, technologies_attributes: [:name])
         end
     
 end

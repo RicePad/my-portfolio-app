@@ -45,6 +45,7 @@ body {
 
 .card > img {
   margin-bottom: .75rem;
+  width: 100%;
 }
 
 .card-text {
@@ -60,6 +61,13 @@ footer p {
   margin-bottom: .25rem;
 }
 
-.portofolio-form{
-  padding: 20px;
+.portofolio-container {
+  padding-top: 30px;
+
 }
+
+.portofolio-image > img {
+    width: 100%;
+
+}
+
