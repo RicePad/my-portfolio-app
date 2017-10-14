@@ -14,12 +14,12 @@
     <div class="site-wrapper">
       <div class="site-wrapper-inner">
         <div class="cover-container">
+          <div id="cover-background"></div>
+
           <%= render 'shared/application_navigation', location: 'top' %>
-  
           <%= yield %>
           <%= source_helper("application") %>
           <%= render 'shared/footer'%>
-          
         </div>
 
       </div>
