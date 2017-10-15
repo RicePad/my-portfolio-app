@@ -1,6 +1,7 @@
 require_relative 'boot'
 
 require 'rails/all'
+require 'dotenv-rails'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -16,6 +17,8 @@ module MyBlogApp
     # -- all .rb files in that directory are automatically loaded.
       # config.web_console.whitelisted_ips = '47.200.124.127'
       config.web_console.whitelisted_ips = '127.255.255.255'
+      config.web_console.whitelisted_ips = '47.200.124.127'
+
 
 
 
