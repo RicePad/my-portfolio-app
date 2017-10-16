@@ -54,20 +54,27 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.1.0' 
 
+#Authentication gems
 gem 'devise'
+gem 'petergate', '~> 1.6', '>= 1.6.3'
 
+
+#Boostrap framework gems
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'jquery-rails'
+
+#Copyright view gem
 gem 'jonli_view_tool'
-gem 'petergate', '~> 1.6', '>= 1.6.3'
+
+#Pagination gems
 gem "font-awesome-rails"
 gem 'kaminari', '~> 1.0', '>= 1.0.1'
-
-
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 
-
-#File uploader
+#File uploader gems
 gem 'mini_magick', '~> 4.8'
 gem 'carrierwave-aws', '~> 1.3'
 gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
+
+#Notification gem
+gem 'gritter', '~> 1.2'
