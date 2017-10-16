@@ -78,3 +78,6 @@ gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
 
 #Notification gem
 gem 'gritter', '~> 1.2'
+
+#Action Cable for commment section
+gem 'redis', '~> 3.3', '>= 3.3.1'
