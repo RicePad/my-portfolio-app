@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :comments
   # use this hash values to create custom routes for devise: , path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'registration'}  
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'registration'}
   
@@ -10,6 +9,8 @@ Rails.application.routes.draw do
   end
   
   get 'portofolio/:id', to: 'portofolios#show', as: 'portofolio_show'
+  
+  mount ActionCable.server => '/cable'
   
   get 'pages/home'
   get 'aboutme', to: 'pages#about'
