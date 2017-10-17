@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'portofolio/:id', to: 'portofolios#show', as: 'portofolio_show'
   
   mount ActionCable.server => '/cable'
+
   
   get 'pages/home'
   get 'aboutme', to: 'pages#about'
