@@ -93,5 +93,8 @@ end
   group :test, :production do
       gem 'pg'
     gem 'web-console', '>= 3.3.0'
+    gem 'rails_12factor'
 
   end
+  
+  ruby '2.4'
