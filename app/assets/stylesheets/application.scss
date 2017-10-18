@@ -55,7 +55,7 @@ body {
 
 /* Padding for spacing */
 .inner {
-  padding: 2rem;
+  padding: 4rem;
 }
 
 
@@ -64,7 +64,7 @@ body {
  */
 
 .masthead {
-  margin-bottom: 2rem;
+  margin-bottom: -60px;
 }
 
 .masthead-brand {
@@ -74,7 +74,7 @@ body {
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: bold;
-  color: rgba(255,255,255,.5);
+  color: #fff;
   background-color: transparent;
   border-bottom: .25rem solid transparent;
 }
