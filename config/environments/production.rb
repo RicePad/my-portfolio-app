@@ -90,4 +90,6 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
     config.action_cable.allowed_request_origins = [' https://my-portofolio-today.herokuapp.com/', ' https://my-portofolio-today.herokuapp.com/']
   config.action_cable.url = "wss://my-portofolio-today.herokuapp.com/"
+  config.serve_static_assets = true
+
 end
