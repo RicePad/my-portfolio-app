@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   get 'contact', to: 'pages#contact'
   
     
-  root to: 'pages#abutme'
+  root to: 'pages#about'
 
   resources :blogs do
     member do
