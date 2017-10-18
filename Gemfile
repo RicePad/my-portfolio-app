@@ -80,7 +80,7 @@ gem 'redis', '~> 3.3', '>= 3.3.1'
 
 group :development do
      gem 'sqlite3'
-      gem 'web-console', '~> 2.0'
+      # gem 'web-console', '~> 2.0'
 
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   # gem 'web-console', '>= 3.3.0'
