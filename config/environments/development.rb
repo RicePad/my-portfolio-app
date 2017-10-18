@@ -52,5 +52,9 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
   
+  
+
   config.action_mailer.default_url_options = { host: 'https://my-app-riskyclick.c9users.io', port: 8080 }
+  config.serve_static_assets = true
+
 end
