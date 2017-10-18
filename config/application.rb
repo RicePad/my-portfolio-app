@@ -18,6 +18,7 @@ module MyBlogApp
       # config.web_console.whitelisted_ips = '47.200.124.127'
       config.web_console.whitelisted_ips = '127.255.255.255'
       config.web_console.whitelisted_ips = '47.200.124.127'
+      config.secret_key_base = ENV["SECRET_KEY_BASE"]
 
 
 

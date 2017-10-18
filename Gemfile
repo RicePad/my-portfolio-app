@@ -81,3 +81,5 @@ gem 'gritter', '~> 1.2'
 
 #Action Cable for commment section
 gem 'redis', '~> 3.3', '>= 3.3.1'
+
+ruby "2.4.0"

@@ -81,7 +81,9 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: my-blog-app_production
-  username: my-blog-app
-  password: <%= ENV['MY-BLOG-APP_DATABASE_PASSWORD'] %>
+  default: &default
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: 5
