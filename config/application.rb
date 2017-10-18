@@ -20,6 +20,8 @@ module MyBlogApp
       config.web_console.whitelisted_ips = '47.200.124.127'
       config.secret_key_base = ENV["SECRET_KEY_BASE"]
       config.web_console.development_only = false
+      config.serve_static_assets = true
+
 
 
 
