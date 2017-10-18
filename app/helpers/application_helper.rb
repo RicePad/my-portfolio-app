@@ -23,25 +23,25 @@ module ApplicationHelper
   
   def nav_items
     [
-      {
-        url: root_path,
-        title: 'Home'
-      },
+      # {
+      #   url: root_path,
+      #   title: 'Home'
+      # },
       {
         url: aboutme_path,
         title: 'About Me'
       },
       {
-        url: contact_path,
-        title: 'Contact'
+        url: portofolios_path,
+        title: 'Portofolio'
       },
       {
         url: blogs_path,
         title: 'Blog'
       },
       {
-        url: portofolios_path,
-        title: 'Portfolio'
+        url: contact_path,
+        title: 'Contact'
       },
     ]
   end

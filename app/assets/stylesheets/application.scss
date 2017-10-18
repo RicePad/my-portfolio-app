@@ -201,7 +201,12 @@ body {
   background: image-url('home_bg.png') no-repeat;
   background-size: cover;
 }
+.background-tint {
+  background-color: rgba(102, 115, 162,.5); // Tint color
+  background-blend-mode: multiply;
+}
 
 .app-footer {
   color: white;
 }
+
