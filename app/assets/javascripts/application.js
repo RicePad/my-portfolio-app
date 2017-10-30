@@ -19,4 +19,5 @@
 //= require bootstrap
 //= require gritter
 //= require cable
+//= require turbolinks
 //= require_tree .
