@@ -18,7 +18,7 @@ module ApplicationHelper
   end
   
   def copyright_generator
-     JonliViewTool::Renderer.copyright 'Jonathan Li', 'All rights reserved'
+     JonliViewTool::Renderer.copyright 'Krystal Chen', 'All rights reserved'
   end
   
   def nav_items
